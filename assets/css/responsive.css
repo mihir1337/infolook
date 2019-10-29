@@ -6,21 +6,11 @@
 }
 
 .section.hero-abnnerss {
-	background: url(../img/circle.png);
+	background: url(../img/Banner_Pattern.svg);
 	background-position: -145px 0px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -35,25 +25,6 @@
 #section2.sampleform2 {
 	height: 770px !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .sideicon {
 	width: 37px;
 	position: relative;
@@ -91,11 +62,8 @@
 	margin-top: 3px;
 }
 
-
-
-
 .section.hero-abnnerss {
-	background: url(../img/circle.png);
+	background: url(../img/Banner_Pattern.svg);
 	background-position: -280px 0px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -457,7 +425,7 @@
 }
 
 .section.hero-abnnerss {
-	background: url(../img/circle.png);
+	background: url(../img/Banner_Pattern.svg);
 	background-repeat: no-repeat;
 	background-position: 52%, 100%;
 	background-size: cover;

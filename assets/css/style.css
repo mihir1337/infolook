@@ -217,7 +217,7 @@ a:hover {
 
 
 .section.hero-abnnerss {
-  background: url(../img/circle.png);
+  background: url(../img/Banner_Pattern.svg);
   background-position: -50px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -346,9 +346,18 @@ a:hover {
   text-align: center;
   line-height: 100px;
   color: #fff;
-  font-size: 38px;
   transition: .3s;
   overflow: hidden;
+}
+
+.others-page a img {
+  width: 40px;
+  line-height: 0;
+}
+
+.others-page.whitepage a img {
+  height: auto;
+  width: 35px;
 }
 
 .others-page a:hover i {
@@ -837,6 +846,7 @@ p.digitalm {
   background-color: #F36F21;
   color: #fff;
 }
+
 .digital-title a i.fa {
   margin-left: 3px;
 }
@@ -1039,6 +1049,17 @@ fieldset {
   -webkit-transition: all 0.28s ease;
   transition: all 0.28s ease;
   box-shadow: none;
+}
+
+.form-group .nice-select {
+  width: 100%;
+  border-color: transparent;
+  padding: 0.125rem 0.125rem 0.0625rem;
+  font-size: 1rem;
+  line-height: 23px;
+  height: 40px;
+  border-bottom: 1px solid #999;
+  border-radius: 0;
 }
 
 #fp-nav ul li a span,
@@ -1496,9 +1517,14 @@ fieldset {
 }
 
 .slow-down {
-  bottom: 15px;
+  bottom: 26px;
   position: fixed;
   z-index: 899;
+}
+
+.slow-down img {
+  height: 35px;
+  margin-top: 15px;
 }
 
 .fp-viewing-firstPage .totop {
@@ -1864,6 +1890,7 @@ fieldset {
   transition: all .2s;
   background: #fff;
 }
+
 .sticky .sideicon::before,
 .sticky .sideicon::after {
   background: #1b2b3a;
@@ -1907,13 +1934,28 @@ fieldset {
   display: block;
   margin: 15px 0;
   font-family: 'Encode Sans Condensed', sans-serif;
-  transition: .3s;
+  transition: all .3s;
+  position: relative;
 }
 
 .sidebarlists ul li a:hover {
-  border-left: 4px solid #f37022;
-  padding-left: 6px;
+  padding-left: 8px;
   color: #f37022;
+}
+
+.sidebarlists ul li a::after {
+  transition: all .3s;
+}
+
+.sidebarlists ul li a:hover::after {
+  height: 100%;
+  width: 4px;
+  content: "";
+  background: #F37022;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -5px;
 }
 
 .crossbars {
@@ -2007,3 +2049,28 @@ fieldset {
 }
 
 /* sample page  END */
+
+select {
+  display: none;
+}
+
+.nice-select.open .list {
+  width: 100%;
+}
+
+.form-group.droping {
+  border-top: 11px;
+}
+
+.nice-select .list {
+  margin-top: 10px;
+}
+
+.form-group .nice-select .current {
+  color: #AAAAAA;
+  font-weight: 700;
+}
+
+.form-group .nice-select:after {
+  margin-top: -8px;
+}

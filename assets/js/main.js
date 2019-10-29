@@ -37,8 +37,9 @@
         $('a[data-rel^=lightcase]').lightcase();
 
 
-// other options
 
+  // Nice select
+  $('select').niceSelect();
 
 
 // addclass & removeclass
