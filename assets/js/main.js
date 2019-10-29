@@ -4,9 +4,15 @@
     jQuery(document).ready(function($){
 
       new fullpage('#fullpage', {
-        licenseKey: '',
+        sectionsColor: ['#24384c', '#ffffff', '#f7f7f7', '#ffffff', '#f7f7f7', '#15202b', '#24384c', '#15202b', '#e4e7e9', '#f6f6f6'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage', '10thPage', ],
+        navigation: true,
+        navigationTooltips: [],
+        showActiveTooltip: true,
+        scrollingSpeed: 800,
+        autoScrolling: false,
+        menu: '#menu'
       });
-
 
         $(".embed-responsive iframe").addClass("embed-responsive-item");
         $(".carousel-inner .item:first-child").addClass("active");
@@ -27,40 +33,8 @@
                 $('.menu-open').toggleClass('toggle');  
         });
 
-
-            $('.popup-class').magnificPopup({
-              type: 'iframe',
-              iframe: {
-              markup: '<div class="mfp-iframe-scaler">'+
-                        '<div class="mfp-close"></div>'+
-                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                      '</div>',
-
-              patterns: {
-                youtube: {
-                  index: 'youtube.com/',
-
-                  id: 'v=',
-
-                  src: 'https://www.youtube.com/embed/%id%?autoplay=1'
-                },
-                vimeo: {
-                  index: 'vimeo.com/',
-                  id: '/',
-                  src: '//player.vimeo.com/video/%id%?autoplay=1'
-                },
-                gmaps: {
-                  index: '//maps.google.',
-                  src: '%id%&output=embed'
-                }
-
-
-              },
-
-              srcAction: 'iframe_src',
-            }
-              // other options
-            });
+        // Activate lightcase
+        $('a[data-rel^=lightcase]').lightcase();
 
 
 // other options

@@ -74,7 +74,19 @@ a:hover {
 }
 
 .main-logo {
-  margin-left: 60px;
+  margin-left: 80px;
+}
+
+.dark-logo {
+  display: none;
+}
+
+.sticky .dark-logo {
+  display: block;
+}
+
+.sticky .white-logo {
+  display: none;
 }
 
 .section {
@@ -137,7 +149,7 @@ a:hover {
   font-weight: 600;
   color: #fff;
   display: inline-block;
-  padding: 10px 19px;
+  padding: 14px 19px;
 }
 
 
@@ -192,8 +204,9 @@ a:hover {
   top: 0px;
   width: 100%;
   z-index: 99;
-  background: #24384ccf;
+  background: #fff;
   height: 80px;
+  box-shadow: 0px 13px 25px -12px rgba(0, 0, 0, 0.1);
 }
 
 .sideicon i {
@@ -270,7 +283,7 @@ a:hover {
 
 .user-rightbox {
   position: relative;
-  z-index: 99;
+  z-index: 9;
   float: right;
 }
 
@@ -453,7 +466,7 @@ a.green1 {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 0;
-  z-index: 899;
+  z-index: 9;
 }
 
 .products-title h1 {
@@ -1483,7 +1496,7 @@ fieldset {
 }
 
 .slow-down {
-  bottom: 100px;
+  bottom: 15px;
   position: fixed;
   z-index: 899;
 }
@@ -1826,6 +1839,10 @@ fieldset {
   transition: all .2s;
 }
 
+.sticky .sideicon span {
+  background: #1b2b3a;
+}
+
 .sideicon::before {
   position: absolute;
   content: "";
@@ -1846,6 +1863,10 @@ fieldset {
   height: 3px;
   transition: all .2s;
   background: #fff;
+}
+.sticky .sideicon::before,
+.sticky .sideicon::after {
+  background: #1b2b3a;
 }
 
 .sideicon:hover::before {
@@ -1884,7 +1905,7 @@ fieldset {
   font-weight: 700;
   font-size: 25px;
   display: block;
-  margin: 11px 0;
+  margin: 15px 0;
   font-family: 'Encode Sans Condensed', sans-serif;
   transition: .3s;
 }
@@ -1916,17 +1937,23 @@ fieldset {
 .crossbars button::after,
 .crossbars button::before {
   height: 3px;
-  width: 30px;
-  background: #3b3b3b;
+  width: 28px;
+  background: #1b2b3a;
   content: "";
   left: 0;
   bottom: 10px;
   position: absolute;
   transform: rotate(135deg);
+  transition: all .3s;
 }
 
 .crossbars button::before {
   transform: rotate(-135deg);
+}
+
+.crossbars button:hover::after,
+.crossbars button:hover::before {
+  width: 32px;
 }
 
 .overlayed {
