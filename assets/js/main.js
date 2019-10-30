@@ -73,6 +73,10 @@
             }
         });
 
+        $('body').scrollspy({
+          target: '#list-example'
+        })
+
     });
 
     	// menu options custom affix

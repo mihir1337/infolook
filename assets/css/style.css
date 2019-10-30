@@ -353,6 +353,7 @@ a:hover {
 .others-page a img {
   width: 40px;
   line-height: 0;
+  transition: all .2s;
 }
 
 .others-page.whitepage a img {
@@ -371,6 +372,14 @@ a:hover {
 
 .others-page {
   margin-top: 25px;
+}
+
+.others-page a:hover img {
+    transform: translateX(5px);
+}
+
+.others-page a {
+    transition: all .2s;
 }
 
 .list-experience.yelloww {
@@ -1531,7 +1540,7 @@ fieldset {
   display: none;
 }
 
-.fp-viewing-secondPage .slow-down,
+/* .fp-viewing-secondPage .slow-down,
 .fp-viewing-3rdPage .slow-down,
 .fp-viewing-4thPage .slow-down, 
 .fp-viewing-5thPage .slow-down,
@@ -1550,9 +1559,25 @@ fieldset {
 .fp-viewing-8thPage .totop,
 .fp-viewing-9thPage .totop {
   display: none;
+} */
+
+.fp-viewing-firstPage .totop,
+.fp-viewing-secondPage .totop,
+.fp-viewing-3rdPage .totop, 
+.fp-viewing-4thPage .totop,
+.fp-viewing-5thPage .totop,
+.fp-viewing-6thPage .totop,
+.fp-viewing-7thPage .totop,
+.fp-viewing-8thPage .totop,
+.fp-viewing-9thPage .totop,
+.fp-viewing-9thPage .todown,
+.fp-viewing-10thPage .todown {
+  display: none;
 }
 
-.fp-viewing-10thPage .totop, .fp-viewing-9thPage .totop {
+
+.fp-viewing-9thPage .totop,
+.fp-viewing-10thPage .totop{
   display: block;
   bottom: 30px;
 }
