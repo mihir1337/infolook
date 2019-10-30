@@ -2041,3 +2041,21 @@ select {
 div#fp-nav.fp-right {
     margin-top: 0px !important;
 }
+
+img.white-scroll {
+  display: none;
+}
+
+.fp-viewing-secondPage img.default-scroll,
+.fp-viewing-3rdPage img.default-scroll,
+.fp-viewing-4thPage img.default-scroll,
+.fp-viewing-5thPage img.default-scroll {
+  display: none;
+}
+
+.fp-viewing-secondPage img.white-scroll,
+.fp-viewing-3rdPage img.white-scroll,
+.fp-viewing-4thPage img.white-scroll,
+.fp-viewing-5thPage img.white-scroll {
+  display: block;
+}
