@@ -375,7 +375,7 @@ a:hover {
 }
 
 .others-page a:hover img {
-    transform: translateX(5px);
+    transform: translateX(10px);
 }
 
 .others-page a {
