@@ -2059,3 +2059,7 @@ img.white-scroll {
 .fp-viewing-5thPage img.white-scroll {
   display: block;
 }
+
+.others-page.whitepage a:hover img {
+  transform: translateX(10px);
+}

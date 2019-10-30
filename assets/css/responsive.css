@@ -1,3 +1,4 @@
+
 /* XL Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1449px) {
 
@@ -12,6 +13,12 @@
 	background-repeat: no-repeat;
 }
 
+}
+
+@media (max-width: 1200px) {
+	.herobanner-content .hero-menu-list {
+		margin-top: 40px;
+	}
 }
 
 /* LG Device :992px. */
