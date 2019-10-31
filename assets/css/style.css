@@ -205,25 +205,29 @@ a:hover {
 
 /* Header bar section END */
 /* user bar section start */
-.user-list ul {
+.user-list ul,
+.feature-list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.user-list ul li a {
+.user-list ul li a,
+.feature-list ul li a {
   color: #24384c;
   font-size: 18px;
   font-weight: 600;
 }
 
-.user-list ul li {
+.user-list ul li,
+.feature-list ul li {
   position: relative;
   padding-left: 22px;
   line-height: 40px;
 }
 
-.user-title h1 {
+.user-title h1,
+.feature-section-heading .title {
   font-size: 80px;
   font-weight: 700;
   color: #15202b;
@@ -267,19 +271,13 @@ a:hover {
   line-height: 30px;
 }
 
-.doteddimage {
-  position: absolute;
-  left: -85px;
-  bottom: -62px;
-  z-index: -1;
-}
-
 .user-area {
   padding-top: 60px;
   padding-bottom: 100px;
 }
 
-.user-list ul li span {
+.user-list ul li span,
+.feature-list ul li span {
   width: 6px;
   height: 6px;
   background: #dd4929;
@@ -1795,4 +1793,76 @@ img.white-scroll {
 
 .others-page.whitepage a:hover img {
   transform: translateX(10px);
+}
+
+.user-list {
+  margin-top: 15px;
+}
+
+.footer-area {
+  background: #fff;
+  position: relative;
+}
+
+.footer-bg {
+  height: 15px
+} 
+
+.feature-box {
+  background: #DD4929;
+  position: relative;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+  z-index: 9;
+}
+
+.feature-content img {
+  width: 50px;
+  margin-bottom: 25px;
+}
+
+.dotimg {
+  position: absolute;
+  left: -95px;
+  bottom: -62px;
+  z-index: -1;
+}
+
+.feature-content p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.feature-content {
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+.feature-img {
+  width: 300px;
+  position: absolute;
+  right: -30px;
+  top: -40px;
+}
+
+.feature-list ul {
+  margin-top: 20px;
+}
+
+.feature-box.yellow,
+.others-page.yellow a {
+  background: #F59221;
+}
+
+.feature-box.blue,
+.others-page.blue a {
+  background: #9F9E36;
+}
+
+.feature-box.green,
+.others-page.green a {
+  background: #528F40;
 }
